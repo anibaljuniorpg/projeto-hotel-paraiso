@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    section#conheca-o-hotel > ul.gride > li{
+        height: 350px;
+    }
+
+    section#conheca-o-hotel > ul.gride > li.smal{
+        flex-basis: 40%;  
+   }
+   section#conheca-o-hotel > ul.gride > li.large{
+       flex-basis: 60%;
+   }
+
+   section#ctt > ul.gride{
+    flex-direction: row;}
+
+    /*menu*/
+    header > div#itens >  nav{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        
+        
+    }
+    
+    header > div#itens > nav > li{
+        list-style: none;
+        padding: 15px;
+    }
+    
+    header > div#itens >  nav > li > a {
+        opacity: 0.9;
+        text-decoration: none;
+        color: rgb(0, 27, 0);
+        font-weight: 400;
+    }
+    
+    header > div#itens >  nav  > li:hover{
+        background-color: rgb(241, 241, 241);
+        opacity: 1;
+    }
+
+    span#menu, span#sair{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header{
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    section#conheca-o-hotel > ul.gride > li{
+        height: 350px;
+    }
+
+    section#conheca-o-hotel > ul.gride > li.smal{
+        flex-basis: 40%;  
+   }
+   section#conheca-o-hotel > ul.gride > li.large{
+       flex-basis: 60%;
+   }
+
+   section#ctt > ul.gride{
+    flex-direction: row;}
+
+    /*Menu*/
+    header > div#itens >  nav{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        
+        
+    }
+    
+    header > div#itens > nav > li{
+        list-style: none;
+        padding: 15px;
+    }
+    
+    header > div#itens >  nav > li > a {
+        opacity: 0.9;
+        text-decoration: none;
+        color: rgb(0, 27, 0);
+        font-weight: 400;
+    }
+    
+    header > div#itens >  nav  > li:hover{
+        background-color: rgb(241, 241, 241);
+        opacity: 1;
+    }
+    div#itens{
+        display: block;
+    }
+
+    span#menu, span#sair{
+        display: none;
+    }
+}  

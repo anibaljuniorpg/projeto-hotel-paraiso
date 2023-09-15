@@ -1,0 +1,32 @@
+
+header > div#itens >  nav{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+    
+}
+
+header > div#itens > nav > li{
+    list-style: none;
+    padding: 15px;
+}
+
+header > div#itens >  nav > li > a {
+    opacity: 0.9;
+    text-decoration: none;
+    color: rgb(0, 27, 0);
+    font-weight: 400;
+}
+
+header > div#itens >  nav  > li:hover{
+    background-color: rgb(241, 241, 241);
+    opacity: 1;
+}
+
+
+function clickMenu(){
+    var menu = window.document.getElementById('menu')
+    var itens = window.document.getElementById('itens')
+    itens.style.display = ''
+}

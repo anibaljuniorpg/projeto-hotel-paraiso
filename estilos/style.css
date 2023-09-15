@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+}
+/*HEADER*/
+header{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+}
+header > img{
+    margin: 20px 0px;
+    width: 200px;
+}
+@media screen and (max-width: 768px){
+    div#itens{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.336);
+    position: fixed;
+    display: none;
+    }
+    section#new > form > button{margin-top: 15px;}
+
+    header > div#itens >  nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    header > div#itens > nav > li{
+        list-style: none;
+        padding: 20px 60px;
+        margin-top: 30px;
+    }
+
+    header > div#itens >  nav > li > a {
+        opacity: 0.9;
+        text-decoration: none;
+        color: white;
+        font-weight:600;
+        font-size:2em;
+        text-shadow: 5px 5px 5px black;
+    }
+
+    header > div#itens >  nav  > li:hover{
+        background-color: rgba(241, 241, 241, 0.301);
+        opacity: 1;
+    }
+    span#menu{
+        display: flex;
+        justify-content: end;
+        font-size: 2.5em;
+        cursor: pointer;
+        margin-right: 20px;
+        transform: translateY(-40px);
+    }
+    span#sair{
+        color: white;
+        float: right;
+        font-size: 2.5em;
+        cursor: pointer;
+        margin-top: 20px;
+        transform: translateX(-30px);
+        
+    }
+
+    header > img{
+        transform: translateY(20px);
+    }
+}
+/*Menu*/
+
+
+
+/*section hero*/
+
+section#hero{
+    display: flex;
+    background-image: url(../imagens/hero.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+section#hero > p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.103);
+}
+
+section#hero > h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.103);
+}
+
+section#hero > a#saiba{                                         
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.842);
+    text-decoration: none;
+    color: #191c03;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+section#hero > a#saiba:hover{
+    background-color: rgba(207, 207, 207, 0.863);
+}
+
+/*Connheca o hotel*/
+
+section#conheca-o-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+section#conheca-o-hotel > h2{
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: #191c03;
+}
+
+section#conheca-o-hotel > p{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+section#conheca-o-hotel > hr{
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+    border: none;
+}
+/*iMAGENS*/
+section#conheca-o-hotel >  ul.gride{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section#conheca-o-hotel > ul.gride > li{
+    height: 250px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    list-style: none;
+    
+}
+section#conheca-o-hotel > ul.gride > li.smal, .large{flex-basis: 100%;}
+
+/*CARACTERISTICAS*/
+
+section#ctt{
+    background-color: #191c03;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    color: white;
+    text-align: center;
+}
+
+section#ctt > h2{
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: white;
+}
+
+section#ctt > p{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+section#ctt > hr{
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 70px;
+    border: none;
+}
+
+/*Caract listas*/
+
+section#ctt > ul.gride{
+    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+section#ctt > ul.gride > li{
+    padding: 0px 30px;
+    text-align: center;
+    list-style: none;
+    
+}
+
+section#ctt > ul.gride > li > span{
+    font-size: 50px;
+    color: #c3c63b;
+    
+    margin: 30px 0px;
+}
+
+
+section#ctt > ul.gride > li > h3{
+    color: #c3c63b;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+/*newletter*/
+
+section#new{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    align-items: center;
+    color: #c3c63b;
+}
+
+section#new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+section#new > h2{
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: #c3c63b;
+}
+
+section#new > p{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+section#new > hr{
+    width: 200px;
+    height: 2px;
+    background-color: #c3c63b;
+    margin-bottom: 70px;
+    border: none;
+}
+
+section#new > form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#new > form > input{
+    padding: 15px;
+    border: 1px solid #c3c63b;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+section#new > form > button{
+
+    padding: 15px;
+    color: #fff;
+    background-color: #c3c63b;
+    text-transform: uppercase;
+    border: none;
+}
+
+section#new > form > button:hover{
+    background-color: #aaac32;
+}
+
+/*Foooter*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #191c03;
+    padding: 50px 0px;
+}
+
+footer ul{
+    display: flex;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+footer > ul > li{
+    color: #aaac32;
+    margin-right: 10px;
+}
+
+footer > ul > li:last-child{
+    margin-right: 0px;
+}
+footer > p{
+    text-align: center;
+    color: #aaac32;
+}

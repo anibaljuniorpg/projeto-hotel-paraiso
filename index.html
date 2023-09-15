@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paraiso</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Hotel paraiso logo">
+        <span onclick="clickMenu()" id="menu" class="material-symbols-outlined">
+            menu
+        </span>
+        
+        <div id="itens" >
+            <span onclick="sairMenu()" id="sair" class="material-symbols-outlined">
+                close
+            </span>
+            <nav>
+                <li><a href="#">  Home  </a></li>
+                <li><a href="#">  Sobre </a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#"> Contato</a></li>
+            </nav>
+        </div>
+        
+    </header>
+
+    <section id="hero">
+        <h2>Conheça esse paraiso chamado Itacare</h2>
+        <p>"Aconchego, conforto, simpatia e alto astral"</p>
+        <a id="saiba" href="https://www.linkedin.com/in/junior-pinheiro-043bbb22b" hreflang="pt-br" target="_blank" rel="external" >Saiba mais</a>
+    </section>
+
+    <section id="conheca-o-hotel" >
+        <h2>Conheça o Hotel Paraíso!</h2>
+        <p>Feche os olhos e imagine o paraíso. Um lugar no meio da mata Atlântica e banhado pelo mar, onde você encontra paz, tranquilidade, conforto e comodidade.</p>
+        <hr>
+        <ul class="gride">
+            <li class="smal" style="background-image: url(imagens/itacare-01.jpg);" ></li>
+            <li class="large" style="background-image: url(imagens/itacare-02.jpg);" ></li>
+            <li class="large" style="background-image: url(imagens/itacare-03.jpg);" ></li>
+            <li class="smal"  style="background-image: url(imagens/itarace-04.jpg);"></li>
+        </ul>
+    </section>
+
+    <section id="ctt" >
+        <h2>Único hotel pé na areia de Itacaré</h2>
+        <p>Implantando em uma área completamente arborizada, o Hotel Paraiso é o único pé na areia de Itacaré. Aqui o mar será o seu companheiro e você terá as belezas da natureza como guia.</p>
+        <hr>
+        <ul class="gride">
+            <li>
+                <span class="material-symbols-outlined">
+                    near_me
+                    </span>
+                <h3>Localização</h3>
+                <p>Localizada no sul da Bahia, entre o mar e a Mata Atlântica, Itacaré tem refrescantes cachoeiras e praias belíssimas, muitas delas tão pequenas que nem aparecem nos mapas.</p>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">
+                    redeem
+                    </span>
+                <h3>Pacotes e Ofertas</h3>
+                <p>Sabe aquele descontraído encontro com a família e amigos? Ou um momento relax? Nossa estrutura conta com uma diversidade de espaços que proporcionam momentos inesquecíveis.</p>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">
+                    near_me
+                    </span>
+                <h3>Acomodações</h3>
+                <p>Hotel Paraíso possui 29 unidades, divididas entre 11 chalés, 16 amplas suítes e 2 chalés familiar, todas com TV a cabo, frigobar, além de varanda com rede.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="new">
+        <h2>NewsLetter</h2>
+        <p>Assine nossa newletter para se manter atualizado com nossos serviços e a programação de nossas viagens culturais</p>
+        <hr>
+
+        <form action="arquivo.php" autocomplete="on" method="post">
+            <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="seu e-mail">
+            <button>Cadastrar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+        <p>
+            Todos os direitos reservados - Hotel Paraíso 023
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
